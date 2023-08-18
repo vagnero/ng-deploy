@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA5N/7MzdOhE+ABpfB88MGjwAAAAACAAAAAAAQZgAAAAEAACAAAAC4q5xgtUGJ/bsQFK99HEN0opCYBJ5C1D+2oBqWC8nTnwAAAAAOgAAAAAIAACAAAACS2dOWlz1KUbG77fJq3IcoACNJXs1F5WvB3DCXqcbML4AAAAA+JYYlKon/acsUuieJHZ1yVEOsYDOXRWPR9ZVOQjKGELfrVAC5nvVks64Zbfb6eV7h/nFXxS+6xq32ai6MqWB3NVK6hDDSF5yJxkS7I4LmQ8UEDNbPACx1CVL1cSI9bJ1N1543XysLPITN/4OQCl62h1sch8aSnBlhoq6QBEJcyUAAAADPTlBzVc1nQa2YQF+XW0xXcLzyG+9n2hylahFp0NnXxgfSOo6qduF+rcumegiQDz7UxttrWUOMI6UvLOe0I7xD</EncryptedPassword>
+    <History>False|2023-08-17T23:35:25.0892857Z;True|2023-08-17T19:39:06.9919751-03:00;True|2023-08-17T19:28:35.8245411-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DataBase">
+      <Value>Server=DESKTOP-B99E3KU\SQLEXPRESS%3bDataBase=DB_SistemaDepartamentos%3bUser Id=sa%3bPassword=sa1234</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="TreinamentoEvoSystems.Data.SistemaDBContext">
+      <Value>Server=DESKTOP-B99E3KU\SQLEXPRESS%3bDataBase=DB_SistemaDepartamentos%3bUser Id=sa%3bPassword=sa1234</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
