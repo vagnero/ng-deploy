@@ -13,6 +13,8 @@ namespace TreinamentoEvoSystems.Data
         : base(options)
         { }
 
+
+      
         //Propriedades que geram tabelas no banco de dados.
         public DbSet<DepartamentoModel> Departamentos { get; set; }
         public DbSet<FuncionarioModel> Funcionarios { get; set; }

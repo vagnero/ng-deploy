@@ -3,9 +3,18 @@
     "apis1": {
       "restored": true,
       "restoreTime": "2023-08-17T22:37:09.8753475Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2023-08-18T05:35:20.7446668Z"
     }
   },
   "parameters": {
+    "secrets1.resourceGroupName": {
+      "Name": "secrets1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "TreinamentoEvoSystems20230817192038ResourceGroup"
+    },
     "apis1.resourceGroupName": {
       "Name": "apis1.resourceGroupName",
       "Type": "resourceGroup",
@@ -13,6 +22,11 @@
     },
     "apis1.subscriptionId": {
       "Name": "apis1.subscriptionId",
+      "Type": "subscription",
+      "Value": "ee7fb88b-eeb1-4051-8975-a4e415972234"
+    },
+    "secrets1.subscriptionId": {
+      "Name": "secrets1.subscriptionId",
       "Type": "subscription",
       "Value": "ee7fb88b-eeb1-4051-8975-a4e415972234"
     }

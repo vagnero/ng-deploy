@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("b1f89bba-f062-4316-a6e4-652090af4864")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TreinamentoEvoSystems")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54d6ad3571784c1b3b4dd90ef3051b5009f9784e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TreinamentoEvoSystems")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TreinamentoEvoSystems")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,6 +4,13 @@
       "apiEndpoint": "https://treinamentoevosystemsapi.azure-api.net/",
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/TreinamentoEvoSystemsapi/apis/TreinamentoEvoSystems",
       "type": "apis.azure"
+    },
+    "secrets1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/TreinamentoEvoSystems20230817192038/providers/Microsoft.ServiceLinker/linkers/VaultUri_BB3A105FEB",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/TreinamentoEvoSystemsvau",
+      "type": "secrets.keyVault",
+      "connectionId": "VaultUri"
     }
   }
 }

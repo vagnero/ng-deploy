@@ -4,8 +4,10 @@
 
 namespace TreinamentoEvoSystems.Migrations
 {
-    public partial class DepartamentoXFuncionario : Migration
+    /// <inheritdoc />
+    public partial class Testando : Migration
     {
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -50,6 +52,7 @@ namespace TreinamentoEvoSystems.Migrations
                 column: "DepartamentoId");
         }
 
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

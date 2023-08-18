@@ -1,29 +1,54 @@
+using Microsoft.AspNetCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using System.Text.Json.Serialization;
 using TreinamentoEvoSystems.Data;
 using TreinamentoEvoSystems.Repositorios;
 using TreinamentoEvoSystems.Repositorios.Interfaces;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
+
 
 namespace TreinamentoEvoSystems
 {
     public class Program
     {
 
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAll",
-                    builder =>
-                    {
-                        builder.AllowAnyOrigin()
-                               .AllowAnyHeader()
-                               .AllowAnyMethod();
-                    });
-            });
+      
 
-            // Outras configurações...
-        }
+
+        public static IWebHostBuilder CreateHostBuilder(string[] args) =>
+    WebHost.CreateDefaultBuilder(args)
+        .ConfigureServices((hostContext, services) =>
+        {
+            // ...
+            // Configurar o Swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Nome da Sua API",
+                    Version = "v1",
+                    Description = "Descrição da sua API",
+                    // Pode adicionar mais informações aqui
+                });
+            });
+            // ...
+        })
+        .Configure(app =>
+        {
+            // ...
+            // Habilitar o Swagger UI
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Nome da Sua API V1");
+            });
+            // ...
+        });
+
+
 
         public static void Main(string[] args)
         {
@@ -39,6 +64,16 @@ namespace TreinamentoEvoSystems
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.ConfigureSwaggerGen(setup =>
+            {
+                setup.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Title = "Weather Forecasts",
+                    Version = "v1"
+                });
+            });
+
 
             builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
             {
@@ -60,6 +95,7 @@ namespace TreinamentoEvoSystems
             builder.Services.AddScoped<IFuncionarioRepositorios, FuncionarioRepositorio>();
 
             var app = builder.Build();
+            app.UseSwagger();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

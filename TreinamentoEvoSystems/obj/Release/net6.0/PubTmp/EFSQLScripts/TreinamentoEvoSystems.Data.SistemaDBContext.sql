@@ -45,7 +45,20 @@ GO
 IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20230808190747_DepartamentoXFuncionario')
 BEGIN
     INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
-    VALUES (N'20230808190747_DepartamentoXFuncionario', N'6.0.0');
+    VALUES (N'20230808190747_DepartamentoXFuncionario', N'7.0.10');
+END;
+GO
+
+COMMIT;
+GO
+
+BEGIN TRANSACTION;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20230818100650_mssql_migration_344')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20230818100650_mssql_migration_344', N'7.0.10');
 END;
 GO
 

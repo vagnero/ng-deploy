@@ -69,3 +69,13 @@ C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\De
 C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\System.Web.Http.Cors.dll
 C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\Azure.Extensions.AspNetCore.Configuration.Secrets.dll
+C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll
+C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\obj\Debug\net6.0\TreinamentoEvoSystems.sourcelink.json
+C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Usuario\source\repos\TreinamentoEvoSystems\TreinamentoEvoSystems\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll

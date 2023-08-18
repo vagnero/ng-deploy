@@ -3,7 +3,4 @@
   <parameter name="IIS Web Application Name" description="" value="TreinamentoEvoSystems20230817192038" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Usuario\\source\\repos\\TreinamentoEvoSystems\\TreinamentoEvoSystems\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
   </parameter>
-  <parameter name="TreinamentoEvoSystems.Data.SistemaDBContext" description="" value="Server=DESKTOP-B99E3KU\SQLEXPRESS;DataBase=DB_SistemaDepartamentos;User Id=sa;Password=sa1234" tags="dbfullsql">
-    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Usuario\\source\\repos\\TreinamentoEvoSystems\\TreinamentoEvoSystems\\obj\\Release\\net6\.0\\PubTmp\\EFSQLScripts\\TreinamentoEvoSystems\.Data\.SistemaDBContext\.sql$" />
-  </parameter>
 </parameters>
